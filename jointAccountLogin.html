@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+    <html>
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" href="jointAccountLogin.css">
+    </head>
+    <body>
+        <h2>LOGIN</h2>
+        <div class="div1">
+            <form>
+                <table>
+                    <tr>
+                        <td><label>User Name</label></td>
+                        <td><input type="text" name="uname"  id="user"></td>
+                    </tr>
+                    <tr>
+                        <td><label>PassWord</label></td>
+                        <td><input type="PassWord" name="pass"  id="password"></td>
+                    </tr>
+                </table>
+                <br><br>
+                <input type="button" class="button" name="log" value="Login" id="login">
+                <br><br>
+            </form>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () 
+            {
+                window.history.forward();
+                function noBack() {
+                window.history.forward();
+            }
+            $("#login").click(function () {
+            {
+                var user1 = $("#user").val();
+                var pass1 = $("#password").val();
+                var user2 = $("#user").val();
+                var pass2 = $("#password").val()
+                if (user1 == "nisha" && pass1 == "mani" || user2 == "jeeva" && pass2 == "mani") 
+                {
+                    window.location.href = "jointAccount.html";
+                }
+                else 
+                {
+                alert("invalid username and PassWord");
+                }
+                }
+                })
+            })
+        </script>
+    </body>
+    
+    </html>
